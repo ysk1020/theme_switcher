@@ -69,4 +69,4 @@ To ensure the selected theme is remembered across browser sessions:
 
 By following these steps, you successfully create a **dynamic theme switcher** that leverages the power of the React Context API and custom hooks for managing shared state and ensuring a seamless experience across sessions.
 
-[![Video]("./src/assets/themeSwitcher.mp4")]
+[[Video]("./src/assets/themeSwitcher.mp4")]
