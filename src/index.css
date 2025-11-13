@@ -1,0 +1,91 @@
+:root {
+  --transition-speed: 0.3s;
+  --font-body: "Inter", system-ui, sans-serif;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-body);
+  min-height: 100vh;
+  transition: background-color var(--transition-speed),
+    color var(--transition-speed);
+}
+
+/* Optional layout helpers */
+header,
+footer {
+  padding: 1rem 2rem;
+  text-align: center;
+  font-weight: 600;
+}
+main {
+  padding: 2rem;
+  min-height: 70vh;
+}
+
+/* Buttons, inputs, etc. */
+button,
+select,
+input {
+  border: none;
+  border-radius: 6px;
+  padding: 0.6rem 1rem;
+  cursor: pointer;
+  font: inherit;
+  transition: background-color var(--transition-speed),
+    color var(--transition-speed), border var(--transition-speed);
+}
+
+/* ----------------------------- */
+/* LIGHT THEME                */
+/* ----------------------------- */
+body.light {
+  --bg-color: #f9fafb;
+  --text-color: #111827;
+  --header-bg: #ffffff;
+  --footer-bg: #f3f4f6;
+  --accent-color: #2563eb;
+  --input-bg: #ffffff;
+  --input-border: #d1d5db;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+body.light header {
+  background-color: var(--header-bg);
+  color: var(--text-color);
+  border-bottom: 1px solid #e5e7eb;
+}
+
+body.light footer {
+  background-color: var(--footer-bg);
+  border-top: 1px solid #e5e7eb;
+}
+
+/* ----------------------------- */
+/* DARK THEME                 */
+/* ----------------------------- */
+body.dark {
+  --bg-color: #1f2937;
+  --text-color: #f9fafb;
+  --header-bg: #111827;
+  --footer-bg: #374151;
+  --accent-color: #60a5fa;
+  --input-bg: #2d3748;
+  --input-border: #4b5563;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+body.dark header {
+  background-color: var(--header-bg);
+  color: var(--text-color);
+  border-bottom: 1px solid #374151;
+}
+
+body.dark footer {
+  background-color: var(--footer-bg);
+  border-top: 1px solid #374151;
+}
