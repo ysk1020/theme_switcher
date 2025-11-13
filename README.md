@@ -208,4 +208,4 @@ return stored ?? "system";
 
 ---
 
-![Video](./src/assets/themeSwitcher.gif)
+![Video](.\src\assets\themeSwitcher.gif)
